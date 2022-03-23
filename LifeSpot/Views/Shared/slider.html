@@ -1,14 +1,24 @@
-﻿<div class="slider">
-    <div class="btnImg" id="btnPreviousImg">
-        <button onclick="ClickBtnImg(-1)">Назад</button>
-    </div>
-    <div class="slider-images">
-        <img src="/Static/Img/ny.jpg" alt="ny.jpg">
-        <img src="/Static/Img/spb.jpg" alt="spb.jpg">
-        <img src="/Static/Img/london.jpg" alt="london.jpg">
-    </div>
-    <div class="btnImg" id="btnNextImg">
-        <button onclick="ClickBtnImg(1)">Вперед</button>
+﻿<div class="slideshow-container">
+
+    <div class="mySlides">
+        <img src="/Static/Img/london.jpg" style="width:100%">
     </div>
 
+    <div class="mySlides">
+        <img src="/Static/Img/ny.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="/Static/Img/spb.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">PREV</a>
+    <a class="next" onclick="plusSlides(1)">NEXT</a>
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
 </div>
